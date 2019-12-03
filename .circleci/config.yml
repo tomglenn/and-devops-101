@@ -7,22 +7,13 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-          keys:
-            - v1-dependencies-{{ checksum "package.json" }}-{{ checksum "package-lock.json"}}
+          key: v1-dependencies-{{ checksum "package.json" }}-{{ checksum "package-lock.json"}}
       - run: npm install
       - save_cache:
           paths:
             - node_modules
-          key: - v1-dependencies-{{ checksum "package.json" }}-{{ checksum "package-lock.json"}}
+          key: v1-dependencies-{{ checksum "package.json" }}-{{ checksum "package-lock.json"}}
       - run: npm run test
-  done:
-    docker:
-      - image: circleci/node:10.15
-    working_directory: ~/hello-devops
-    steps:
-      - checkout
-      - run: echo Done!
-    
 
 workflows:
   version: 2
