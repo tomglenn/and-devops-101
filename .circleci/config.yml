@@ -15,9 +15,18 @@ jobs:
             - node_modules
           key: - v1-dependencies-{{ checksum "package.json" }}-{{ checksum "package-lock.json"}}
       - run: npm run test
+  done:
+    docker:
+      - image: circleci/node:10.15
+    working_directory: ~/hello-devops
+    steps:
+      - checkout
+      - run: echo Done!
+    
 
 workflows:
   version: 2
   build-deploy:
     jobs:
-      - build-test      
+      - build-test
+      - done
