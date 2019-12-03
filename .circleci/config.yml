@@ -14,6 +14,8 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}-{{ checksum "package-lock.json"}}
       - run: npm run test
+      - store_test_results
+      - run: echo Done!
 
 workflows:
   version: 2
