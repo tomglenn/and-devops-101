@@ -20,4 +20,3 @@ workflows:
   build-deploy:
     jobs:
       - build-test
-      - done
