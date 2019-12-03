@@ -15,7 +15,7 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}-{{ checksum "package-lock.json"}}
       - run: npm run test
       - store_test_results:
-        path: test-results    
+          path: test-results    
       - run: echo Done!
 
 workflows:
