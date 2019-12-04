@@ -4,23 +4,26 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 This project aims to take you on a journey from a React app running locally, through building and testing, creating an image and deploying it to an environment.
 
-## Setting up a Pipeline
+## Checkout Hello DevOps from Github repo
 
-### Testing Code
+## Run on local machine
 
-### Building a Docker Image
+## Set up CircleCI
 
-### Running e2e tests
+## Start pipeline creation: on merge with master, build the app on CircleCI
 
-## Creating an Environment
+## Add tests run in Pipeline
 
-### IaC with Terraform
+## Create Docker file to build production code and run locally
 
-### Building our Environment
+## Add build and save of Docker image to Pipeline
 
-## Deploying our Application
+## Deploy manually to AWS Fargate (already set up, prerequisite to sign up)
 
-### Using Kubernetes
+## Add deployment to Fargate to pipeline
 
-### Deployment within Pipeline
+## Run whole pipeline from scratch
 
+## Show application running on production environment
+
+## Make changes to app and run whole pipeline
