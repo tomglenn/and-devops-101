@@ -4,7 +4,7 @@ provider "aws" {
 
 # Copy the bucket and adjust the permissions
 resource "aws_s3_bucket" "andtest" {
-  count = 10
+  count = 11
   bucket = "andacademy-devops-${count.index}"
   acl = "public-read"
   tags = {
