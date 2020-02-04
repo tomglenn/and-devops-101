@@ -70,5 +70,5 @@ If you've got to the end and fancy a challenge, why don't you try these exercise
 * Find a way to run your App.test.js as part of your pipeline. Unfortunately Heroku charges you to add tests to its pipeline, so you can consider the following options:
   * Using GitHooks with Husky to run the tests on a push to master.
   * Using the ChecksAPI in GitHub to run the tests on a commit.
-  * Anything else you can think of
+  * See below.
 * Set up a test run in CircleCI, the config.yml file is already created for you. Maybe you can deploy to Heroku using CircleCI?
