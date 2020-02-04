@@ -72,3 +72,4 @@ If you've got to the end and fancy a challenge, why don't you try these exercise
   * Using the ChecksAPI in GitHub to run the tests on a commit.
   * See below.
 * Set up a test run in CircleCI, the config.yml file is already created for you. Maybe you can deploy to Heroku using CircleCI?
+* Can you get Heroku CLI working on your local machine? It will enable you to create and manage apps from your command line. More information [here](https://devcenter.heroku.com/articles/heroku-cli)
