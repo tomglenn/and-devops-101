@@ -6,7 +6,7 @@ This is a very basic Hello World application, that you will deploy to a Heroku s
 
 ## Fork this Repo
 
-* Crete an account on GitHub if you haven't one already.
+* Create an account on GitHub if you haven't one already.
 * Fork this repo. Forking means to make a copy into your own repository, so you can make changes without affecting the original repository.
 * Give your repo a name, e.g. *devops-training-steve*.
 
