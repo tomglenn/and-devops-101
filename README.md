@@ -58,3 +58,10 @@ This is a very basic Hello World application, that you will deploy to a Heroku s
 * It will have another entry for the deployment, and will say "Deployed" once the app is ready.
 * In the top right of the page, you can click *Open app*, and verify that your changes have been made and released.
 * Congratulations! You have used your pipeline to deploy your application after a change.
+
+## Challenges
+
+If you've got to the end and fancy a challenge, why don't you try these exercises?
+
+* Create a pipeline, add your app to the staging environment, and create a blank app in the production environment. You can then promote your staging app to the production by clicking on *Promote to Production*
+* Setup a test run in CircleCI, the config.yml file is already created for you
