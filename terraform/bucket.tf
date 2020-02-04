@@ -1,11 +1,11 @@
 provider "aws" {
   region = "eu-west-2"
-
 }
 
 # Copy the bucket and adjust the permissions
 resource "aws_s3_bucket" "andtest" {
-  bucket = "andacademy-test3"
+  count = 10
+  bucket = "andacademy-devops-${count.index}"
   acl = "public-read"
   tags = {
     Owner        = "romans"
@@ -19,7 +19,7 @@ resource "aws_s3_bucket" "andtest" {
         "s3:GetObject"
       ],
       "Effect": "Allow",
-      "Resource": "arn:aws:s3:::andacademy-test3/*",
+      "Resource": "arn:aws:s3:::andacademy-devops-${count.index}/*",
       "Principal": {
         "AWS": [
           "*"
@@ -46,7 +46,7 @@ resource "aws_iam_policy" "andtest-deploy" {
             "s3:GetObjectAcl",
             "s3:DeleteObject"
          ],
-         "Resource":"${aws_s3_bucket.andtest.arn}/*"
+         "Resource":"arn:aws:s3:::andacademy-devops-*/*"
       }
   ]
 }
