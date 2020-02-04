@@ -55,5 +55,6 @@ This is a very basic Hello World application, that you will deploy to a Heroku s
 * Back in the Activity tab in your app page, you should see a new entry which says 'Build in Progress'.
 * You can view the build log, which will be similar to how it was when you first deployed.
 * Once successful, it will tell you "Build succeeded".
+* It will have another entry for the deployment, and will say "Deployed" once the app is ready.
 * In the top right of the page, you can click *Open app*, and verify that your changes have been made and released.
 * Congratulations! You have used your pipeline to deploy your application after a change.
