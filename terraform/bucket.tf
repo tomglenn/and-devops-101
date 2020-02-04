@@ -1,10 +1,9 @@
 provider "aws" {
   region = "eu-west-2"
-
 }
 
 resource "aws_s3_bucket" "andtest" {
-  bucket = "andacademy-test3"
+  bucket = "andacademy-devops-romans"
   acl = "public-read"
   tags = {
     Owner        = "romans"
