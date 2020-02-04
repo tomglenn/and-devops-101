@@ -3,6 +3,7 @@ provider "aws" {
 
 }
 
+# Copy the bucket and adjust the permissions
 resource "aws_s3_bucket" "andtest" {
   bucket = "andacademy-test3"
   acl = "public-read"
