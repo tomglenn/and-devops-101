@@ -63,5 +63,12 @@ This is a very basic Hello World application, that you will deploy to a Heroku s
 
 If you've got to the end and fancy a challenge, why don't you try these exercises?
 
-* Create a pipeline, add your app to the staging environment, and create a blank app in the production environment. You can then promote your staging app to the production by clicking on *Promote to Production*
-* Setup a test run in CircleCI, the config.yml file is already created for you
+* Create a pipeline
+  * Add your app to the staging environment, and create a blank app in the production environment.
+  * You can then promote your staging app to production by clicking on *Promote to Production*. 
+  * Make a change, verify that it has built and deployed in staging, and promote the change to production again.
+* Find a way to run your App.test.js as part of your pipeline. Unfortunately Heroku charges you to add tests to its pipeline, so you can consider the following options:
+  * Using GitHooks with Husky to run the tests on a push to master.
+  * Using the ChecksAPI in GitHub to run the tests on a commit.
+  * Anything else you can think of
+* Set up a test run in CircleCI, the config.yml file is already created for you. Maybe you can deploy to Heroku using CircleCI?
