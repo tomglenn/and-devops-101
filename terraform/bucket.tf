@@ -2,6 +2,7 @@ provider "aws" {
   region = "eu-west-2"
 }
 
+# Copy the bucket and adjust the permissions
 resource "aws_s3_bucket" "andtest" {
   bucket = "andacademy-devops-romans"
   acl = "public-read"
