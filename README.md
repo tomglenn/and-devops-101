@@ -2,28 +2,58 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-This project aims to take you on a journey from a React app running locally, through building and testing, creating an image and deploying it to an environment.
+This is a very basic Hello World application, that you will deploy to a Heroku server
 
-## Checkout Hello DevOps from Github repo
+## Fork this Repo
 
-## Run on local machine
+* Crete an account on GitHub if you haven't one already.
+* Fork this repo. Forking means to make a copy into your own repository, so you can make changes without affecting the original repository.
+* Give your repo a name, e.g. *devops-training-steve*.
 
-## Set up CircleCI
+## Sign up to Heroku
 
-## Start pipeline creation: on merge with master, build the app on CircleCI
+* Create an account on Heroku [here](https://signup.heroku.com/).
 
-## Add tests run in Pipeline
+## Create an App
 
-## Create Docker file to build production code and run locally
+* Go to your apps in your dashboard [here](https://dashboard.heroku.com/apps).
+* Click on *New* and *Create New App*.
+* Give your app a name (globally unique), and select region to be Europe
+* Click *Create App*.
 
-## Add build and save of Docker image to Pipeline
+## Configure your App
 
-## Deploy manually to AWS Fargate (already set up, prerequisite to sign up)
+* Ensure you are in the Deploy tab on your app page.
+* In the *Deployment Method* option, click on *GitHub*.
+* Connect to GitHub using your credentials, select your user, and search for your repo name e.g. *devops-training-steve*.
+* Click on *Search*.
+* In the results page, by your repository, click on *Connect*.
 
-## Add deployment to Fargate to pipeline
+## Deploy your App
 
-## Run whole pipeline from scratch
+* On connected, two further sections should appear: *Automatic deploys* and *Manual deploy*.
+* In *Automatic deploys*, ensure the master branch is selected in the dropdown, and click on *Enable Automatic Deploys*.
+* In *Manual deploy*, ensure the master branch is selected, and click *Deploy Branch*. This will deploy the code to an app for you.
 
-## Show application running on production environment
+## View your App
 
-## Make changes to app and run whole pipeline
+* You will see a build log generating. This is logging out the current deployment, where Heroku recognises a NodeJS application, creates a runtime environment, installs dependencies, and starts the app.
+* If successful, it will tell you that *Your app was successfully deployed*.
+* You can view your live application by clicking *View*
+* Your app will appear at a url similar to test-devops-steve.herokuapp.com. This is live on the Internet. 
+* Congratulations! You have successfully deployed your application.
+
+## Change your App
+
+* You have set up an auomatic deployment, so if there is a commit on the master branch, it will run the release process.
+* Head to the Activity tab in your app page, and it will display what has gone on with your app. You should see a successful build and deployment.
+* In GitHub, you can use the online editor to change *src/App.js* in your repo. Go to the file, and click on the Pencil icon to edit.
+* Make a simple change to the text. Once you're happy, scroll down to the bottom and click *Commit changes*. Ensure you are committing directly to the master branch.
+
+## Check your Build
+
+* Back in the Activity tab in your app page, you should see a new entry which says 'Build in Progress'.
+* You can view the build log, which will be similar to how it was when you first deployed.
+* Once successful, it will tell you "Build succeeded".
+* In the top right of the page, you can click *Open app*, and verify that your changes have been made and released.
+* Congratulations! You have used your pipeline to deploy your application after a change.
