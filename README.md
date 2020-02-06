@@ -12,6 +12,8 @@ This is a very basic Hello World application, that you will deploy to a Heroku s
 
 ## Sign up to Heroku
 
+* Heroku is a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud. (From [heroku.com](https://www.heroku.com)
+* It's a really quick way to set up an environment and deploy to it, perfect for budding DevOps engineers.
 * Create an account on Heroku [here](https://signup.heroku.com/).
 
 ## Create an App
@@ -72,4 +74,4 @@ If you've got to the end and fancy a challenge, why don't you try these exercise
   * Using the ChecksAPI in GitHub to run the tests on a commit.
   * See below.
 * Set up a test run in CircleCI, the config.yml file is already created for you. Maybe you can deploy to Heroku using CircleCI?
-* Can you get Heroku CLI working on your local machine? It will enable you to create and manage apps from your command line. More information [here](https://devcenter.heroku.com/articles/heroku-cli)
+* Can you get Heroku CLI working on your local machine? It will enable you to create and manage apps from your command line. More information [here](https://devcenter.heroku.com/articles/heroku-cli).
